@@ -1,0 +1,10 @@
+name = "InsertionSort"
+version = "0.1.0"
+defaultTargets = ["insertionsort"]
+
+[[lean_lib]]
+name = "InsertionSort"
+
+[[lean_exe]]
+name = "insertionsort"
+root = "Main"
