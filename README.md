@@ -1,7 +1,8 @@
 # Correctness Proof of Insertion Sort
 
 This repository contains correctness proofs for **Insertion Sort** under different specifications in Lean.  
-The goal is to compare how different specifications affect the structure and difficulty of correctness proofs.
+The goal is to compare how different specifications affect the structure and difficulty of correctness proofs.  
+This work was inspired by [Verified Functional Algorithms](https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html) of Software Foundations.
 
 A correctness proof for a sorting algorithm typically involves these two properties:
 
@@ -40,3 +41,9 @@ We provide two different specifications for each property and prove correctness 
 3. **Equivalence of the Two Approaches**  
    File: [PermEq.lean](InsertionSort/PermEq.lean)  
 
+
+## References
+
+  *Software Foundations, Volume 3: Verified Functional Algorithms*  
+  Andrew W. Appel et al.  
+  [https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html](https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html)  
