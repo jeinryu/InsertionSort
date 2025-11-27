@@ -1,4 +1,5 @@
 import InsertionSort.Spec
+import InsertionSort.IndexProof
 
 -- if Sorted then Sorted'
 theorem Sorted_Sorted' (l : List Nat) : Sorted l → Sorted' l := by
@@ -47,9 +48,4 @@ theorem Sorted'_Sorted (l : List Nat) : Sorted' l → Sorted l := by
             simp [Sorted'] at h
             exact h 0 1 x y (by omega) (by simp) (by simp)
           . -- Sorted (y :: ys)
-            have lem : Sorted' (y :: ys) := by
-              simp [Sorted']
-              intro i j iv jv h₁ h₂ h₃
-              rw [← List.getElem?_cons_succ] at h₂ h₃
-              exact h (i + 1) (j + 1) iv jv (by omega) h₂ h₃
-            exact ih lem
+            exact ih (cons_Sorted' x (y :: ys) h)
