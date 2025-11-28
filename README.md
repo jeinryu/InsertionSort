@@ -1,8 +1,8 @@
-# Correctness Proof of Insertion Sort
+# Insertion Sort Correctness Proofs in Lean: A Comparison of Different Specifications
 
 This repository contains correctness proofs for **Insertion Sort** under different specifications in Lean.  
 The goal is to compare how different specifications affect the structure and difficulty of correctness proofs.  
-This work was inspired by [Verified Functional Algorithms](https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html) of Software Foundations.
+This work was inspired by [Verified Functional Algorithms](https://softwarefoundations.cis.upenn.edu/vfa-current/toc.html) of Software Foundations. For more details, see the accompanying paper [Insertion_Sort.pdf](https://github.com/jeinryu/InsertionSort/blob/main/Insertion_Sort.pdf)
 
 A correctness proof for a sorting algorithm typically involves these two properties:
 
